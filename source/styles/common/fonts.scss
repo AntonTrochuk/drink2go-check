@@ -1,7 +1,167 @@
 @font-face {
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: url("/source/fonts/Montserrat.woff2") format("woff2"),
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  src:
+    url("../../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "rouble";
+  src: url("../../fonts/rouble-webfont.eot");
+  src:
+    url("../../fonts/rouble-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/rouble-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rouble-text {
+  font-family: "rouble", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  font-style: normal;
+  margin-left: -5;
+}
+
+.rouble-old-text {
+  font-family: "rouble", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-style: normal;
+  margin-left: -5;
+  color: $basic_primary;
+}
+
+.slider-heading {
+  font-family: "Montserrat-ExtraBold", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.slider-description {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.heading2 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.heading3 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.heading4 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.badge-text {
+  font-family: "Montserrat-ExtraBold", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.price-text {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.old-price-text {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+
+.label-text {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.preview-button-text {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
