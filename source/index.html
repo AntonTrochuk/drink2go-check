@@ -18,7 +18,7 @@
         <picture class="main-header__picture-icon">
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./icons/logo_mobile.svg">
           <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./icons/logo_mobile.svg">
-          <img class="main-header__image" src="/source/icons/logo_mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
+          <img class="main-header__image" src="./icons/union_icon.svg" width="32" height="36" alt="Логотип Drink2Go">
         </picture>
 
       </a>
@@ -100,47 +100,47 @@
       <ul class="advantages__list">
         <li class="advantages__item">
           <img class="advantages__item-img" width="23" height="2" src="#" alt="#">
-          <p class="advantages__item-text-block">
-          <h4 class="advantages__item-subtitle">
-            Скорость
-          </h4>
-          <span class="advantages__item-text">
-            Готовый напиток всегда под рукой — просто открой банку
-          </span>
-          </p>
+          <div class="advantages__item-text-block">
+            <h4 class="advantages__item-subtitle">
+              Скорость
+            </h4>
+            <span class="advantages__item-text">
+              Готовый напиток всегда под рукой — просто открой банку
+            </span>
+          </div>
         </li>
         <li class="advantages__item">
-          <img class="advantages__item-img" src="" alt="">
-          <p class="advantages__item-text-block">
-          <h4 class="advantages__item-subtitle">
-            Удобство
-          </h4>
-          <span class="advantages__item-text">
-            Легко помещается и в карман,и в маленькую сумочку
-          </span>
-          </p>
+          <img class="advantages__item-img" width="100" height="100" src="./icons/logo_mobile.svg" alt="">
+          <div class="advantages__item-text-block">
+            <h4 class="advantages__item-subtitle">
+              Удобство
+            </h4>
+            <span class="advantages__item-text">
+              Легко помещается и в карман,и в маленькую сумочку
+            </span>
+          </div>
         </li>
         <li class="advantages__item">
-          <img class="advantages__item-img" src="" alt="">
-          <p class="advantages__item-text-block">
-          <h4 class="advantages__item-subtitle">
-            Бодрость
-          </h4>
-          <span class="advantages__item-text">
-            Сбалансированная доза кофеина даст мощный заряд энергии
-          </span>
-          </p>
+          <img class="advantages__item-img" width="100" height="100" src="#" alt="#">
+          <div class="advantages__item-text-block">
+            <h4 class="advantages__item-subtitle">
+              Бодрость
+            </h4>
+            <span class="advantages__item-text">
+              Сбалансированная доза кофеина даст мощный заряд энергии
+            </span>
+          </div>
         </li>
         <li class="advantages__item">
-          <img class="advantages__item-img" src="" alt="">
-          <p class="advantages__item-text-block">
-          <h4 class="advantages__item-subtitle">
-            Экологичность
-          </h4>
-          <span class="advantages__item-text">
-            Вся упаковка сделана из перерабатываемых материалов
-          </span>
-          </p>
+          <img class="advantages__item-img" width="100" height="100" src="#" alt="#">
+          <div class="advantages__item-text-block">
+            <h4 class="advantages__item-subtitle">
+              Экологичность
+            </h4>
+            <span class="advantages__item-text">
+              Вся упаковка сделана из перерабатываемых материалов
+            </span>
+          </div>
         </li>
       </ul>
     </section>
@@ -155,15 +155,17 @@
         <fieldset class="filter__price-fieldset">
           <legend class="filter__price-legend ">Цена</legend>
           <div class="filter__price">
-            <input type="text" class="filter__price-range start" name="start" id="range-start" value="0">
-            <input type="text" class="filter__price-range end" name="end" id="range-end" value="9000">
+            <label for="range-start"></label>
+            <label for="range-end"></label>
+            <input class="filter__price-range start" type="text" name="start" id="range-start" value="0">
+            <input class="filter__price-range end" type="text" name="end" id="range-end" value="9000">
             <div class="filter__range">
               <div class="filter__range-scale">
                 <div class="filter__range-bar" style="left: 0; width: 226px">
-                  <button type="button" class="filter__range-toggle toggle-min">
+                  <button class="filter__range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
-                  <button type="button" class="filter__range-toggle toggle-max">
+                  <button class="filter__range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                 </div>
@@ -173,20 +175,20 @@
         </fieldset>
         <fieldset class="filter__availability-fieldset">
           <legend class="filter__availability-legend ">Наличие молока</legend>
-          <input type="radio" id="availabilityDoesntMatter">
-          <label class="filter__availability-switch" for="availabilityDoesntMatter">
+          <input name="#" type="radio" id="availability-doesnt-matter">
+          <label class="filter__availability-switch" for="availability-doesnt-matter">
             Неважно
           </label>
-          <input type="radio" id="availabilityAnimal">
-          <label class="filter__availability-switch" for="availabilityAnimal">
+          <input name="#" type="radio" id="availability-animal">
+          <label class="filter__availability-switch" for="availability-animal">
             Только животное
           </label>
-          <input type="radio" id="availabilityVegetable">
-          <label class="filter__availability-switch" for="availabilityVegetable">
+          <input name="#" type="radio" id="availability-vegetable">
+          <label class="filter__availability-switch" for="availability-vegetable">
             Только растительное
           </label>
-          <input type="radio" id="availabilityWithout">
-          <label class="filter__availability-switch" for="availabilityWithout">
+          <input name="#" type="radio" id="availability-without">
+          <label class="filter__availability-switch" for="availability-without">
             Без молока
           </label>
         </fieldset>
@@ -194,27 +196,27 @@
           <legend class="filter__country-legend ">Страна произростания</legend>
           <label class="filter__country-switch">
             Бразилия
-            <input type="radio">
+            <input name="#" type="radio">
             <span class="filter__country-slider"></span>
           </label>
           <label class="filter__country-switch">
             Эфиопия
-            <input type="radio">
+            <input name="#" type="radio">
             <span class="filter__country-slider"></span>
           </label>
           <label class="filter__country-switch">
             Колумбия
-            <input type="radio">
+            <input name="#" type="radio">
             <span class="filter__country-slider"></span>
           </label>
           <label class="filter__country-switch">
             Коста-Рика
-            <input type="radio">
+            <input name="#" type="radio">
             <span class="filter__country-slider"></span>
           </label>
           <label class="filter__country-switch">
             Перу
-            <input type="radio">
+            <input name="#" type="radio">
             <span class="filter__country-slider"></span>
           </label>
         </fieldset>
@@ -226,7 +228,7 @@
         </button>
       </div>
       <label for="filterSelect">Сортировка</label>
-      <select class="catalog__select" name="" id="filterSelect">
+      <select class="catalog__select" name="#" id="filter-select">
         <option value="default">по умолчанию</option>
       </select>
       <ul class="catalog__list">
@@ -236,14 +238,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -259,14 +261,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -282,14 +284,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -305,14 +307,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -328,14 +330,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -351,14 +353,14 @@
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="catalog__image" src="#" width="32" height="36" alt="Логотип Drink2Go">
           </picture>
-          <p class="catalog__item-text-block">
-          <h4 class="catalog__item-subtitle">
-            Декаф Флэт Уайт
-          </h4>
-          <span class="catalog__item-text">
-            Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-          </span>
-          </p>
+          <div class="catalog__item-text-block">
+            <h4 class="catalog__item-subtitle">
+              Декаф Флэт Уайт
+            </h4>
+            <span class="catalog__item-text">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </span>
+          </div>
           <div class="catalog__item-price-block">
             <span class="catalog__item-price-text">
               225₽
@@ -373,7 +375,6 @@
       <div class="catalog__pagination-nav">
         <ul class="catalog__pagination-list">
           <li class="catalog__pagination-item pagination-item-active">
-            <button></button>
           </li>
           <li class="catalog__pagination-item pagination-item-active">
             <a class="pagination pagination-active button-big" href="#">1</a>
@@ -385,7 +386,6 @@
             <a class="pagination pagination-peace button-big" href="#">3</a>
           </li>
           <li class="catalog__pagination-item pagination-item-active">
-            <button></button>
           </li>
         </ul>
       </div>
@@ -397,7 +397,7 @@
   </main>
   <footer class="main-footer footer">
     <div class="footer__navigation">
-      <a class="footer__navigation-logo" href="">
+      <a class="footer__navigation-logo" href="#">
         <picture class="footer__navigation-picture">
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
           <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
@@ -406,13 +406,13 @@
       </a>
       <ul class="footer__navigation-social-list">
         <li class="footer__navigation-social-item">
-          <img src="" alt="">
+          <img width="100" height="100" src="#" alt="#">
         </li>
         <li class="footer__navigation-social-item">
-          <img src="" alt="">
+          <img width="100" height="100" src="#" alt="#">
         </li>
         <li class="footer__navigation-social-item">
-          <img src="" alt="">
+          <img width="100" height="100" src="#" alt="#">
         </li>
       </ul>
     </div>
