@@ -1,0 +1,227 @@
+.catalog {
+  padding: 20px;
+  background-color: $background_lightest_grey;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: $basic_primary;
+}
+
+.filter__price-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__range-toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid $basic_primary;
+  background-color: $basic_white;
+  top: -10px;
+}
+
+.filter__range {
+  position: relative;
+  top: 9px;
+  height: 4px;
+  background-color: red;
+}
+
+.filter__range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  background-color: $basic_primary;
+}
+
+.toggle-max {
+  right: 0;
+}
+
+.filter__price {
+  margin-top: 24px;
+}
+
+.filter__price-range {
+  width: 118px;
+  height: 40px;
+  border: 2px solid $basic_primary;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.filter__availability-fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__availability-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  margin: 0;
+  accent-color: $basic_primary;
+  width: 24px;
+  height: 24px;
+  border: $basic_primary;
+}
+
+.filter__country-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__country-switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.filter__country-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter__country-switch input {
+  display:none;
+}
+
+.filter__country-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+}
+
+input:checked + .filter__country-slider {
+  background-color: $basic_primary;
+}
+
+input:focus + .filter__country-slider {
+  box-shadow: 0 0 1px $basic_primary;
+}
+
+input:checked + .filter__country-slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(17px);
+}
+
+.filter__button {
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-apply {
+  background-color: $basic_primary;
+  color: $basic_white;
+}
+
+.button-reset {
+  background-color: $basic_white;
+  color: $basic_primary;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalog__picture {
+  margin: 40px 20px 24px 20px;
+}
+
+.catalog__item {
+  background-color: $basic_white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__item-text-block {
+  margin: 0 20px 16px 20px;
+}
+
+.catalog__item-price-block {
+  margin: 0 20px 20px 18px;
+  display: flex;
+  gap: 50px;
+}
+
+.catalog__item-price-rouble {
+  margin-left: 1px;
+}
+
+.catalog__item-price-button {
+  background-color: $basic_primary;
+  color: $basic_white;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 20px 8px 45px;
+  background-image: url('../../images/catalog_button_union_mobile@2x.png');
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px 10px;
+}
+
+.catalog__pagination-list {
+  list-style: none;
+  display: flex;
+}

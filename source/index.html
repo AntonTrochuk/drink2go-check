@@ -149,85 +149,107 @@
       </ul>
     </section>
     <section class="main-container__catalog catalog">
-      <h2 class="catalog__title">
+      <h2 class="catalog__title badge-text">
         Каталог
       </h2>
-      <h3 class="catalog__subtitle">
+      <h3 class="catalog__subtitle heading2">
         Каталог кофейных напитков
       </h3>
       <div class="catalog__filter filter">
         <fieldset class="filter__price-fieldset">
-          <legend class="filter__price-legend ">Цена</legend>
-          <div class="filter__price">
-            <label for="range-start"></label>
-            <label for="range-end"></label>
-            <input class="filter__price-range start" type="text" name="start" id="range-start" value="0">
-            <input class="filter__price-range end" type="text" name="end" id="range-end" value="9000">
-            <div class="filter__range">
-              <div class="filter__range-scale">
-                <div class="filter__range-bar" style="left: 0; width: 226px">
-                  <button class="filter__range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <button class="filter__range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
-                </div>
+          <legend class="filter__price-legend label-text">Цена</legend>
+          <div class="filter__range">
+            <div class="filter__range-scale">
+              <div class="filter__range-bar" style="left: 0; width: 241px">
+                <button class="filter__range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button class="filter__range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
               </div>
             </div>
           </div>
+          <div class="filter__price">
+            <label for="range-start"></label>
+            <label for="range-end"></label>
+            <input class="filter__price-range start input-text" type="text" name="start" id="range-start" value="0">
+            <input class="filter__price-range end input-text" type="text" name="end" id="range-end" value="900">
+          </div>
         </fieldset>
         <fieldset class="filter__availability-fieldset">
-          <legend class="filter__availability-legend ">Наличие молока</legend>
-          <input name="#" type="radio" id="availability-doesnt-matter">
-          <label class="filter__availability-switch" for="availability-doesnt-matter">
+          <legend class="filter__availability-legend label-text">Наличие молока</legend>
+          <label class="filter__availability-switch radio-text" for="availability-doesnt-matter">
+            <input name="availability" type="radio" id="availability-doesnt-matter" checked>
             Неважно
           </label>
-          <input name="#" type="radio" id="availability-animal">
-          <label class="filter__availability-switch" for="availability-animal">
+          <label class="filter__availability-switch radio-text" for="availability-animal">
+            <input name="availability" type="radio" id="availability-animal">
             Только животное
           </label>
-          <input name="#" type="radio" id="availability-vegetable">
-          <label class="filter__availability-switch" for="availability-vegetable">
+          <label class="filter__availability-switch radio-text" for="availability-vegetable">
+            <input name="availability" type="radio" id="availability-vegetable">
             Только растительное
           </label>
-          <input name="#" type="radio" id="availability-without">
-          <label class="filter__availability-switch" for="availability-without">
+          <label class="filter__availability-switch radio-text" for="availability-without">
+            <input name="availability" type="radio" id="availability-without">
             Без молока
           </label>
         </fieldset>
         <fieldset class="filter__country-fieldset">
-          <legend class="filter__country-legend ">Страна произростания</legend>
-          <label class="filter__country-switch">
-            Бразилия
-            <input name="#" type="radio">
-            <span class="filter__country-slider"></span>
-          </label>
-          <label class="filter__country-switch">
-            Эфиопия
-            <input name="#" type="radio">
-            <span class="filter__country-slider"></span>
-          </label>
-          <label class="filter__country-switch">
-            Колумбия
-            <input name="#" type="radio">
-            <span class="filter__country-slider"></span>
-          </label>
-          <label class="filter__country-switch">
-            Коста-Рика
-            <input name="#" type="radio">
-            <span class="filter__country-slider"></span>
-          </label>
-          <label class="filter__country-switch">
-            Перу
-            <input name="#" type="radio">
-            <span class="filter__country-slider"></span>
-          </label>
+          <legend class="filter__country-legend label-text">Страна произростания</legend>
+          <ul class="filter__country-list">
+            <li class="filter__country-item">
+              <label class="filter__country-switch">
+                <input name="country" type="radio" checked>
+                <span class="filter__country-slider"></span>
+              </label>
+              <span class="filter__country-item-text radio-text">
+                Бразилия
+              </span>
+            </li>
+            <li class="filter__country-item">
+              <label class="filter__country-switch">
+                <input name="country" type="radio">
+                <span class="filter__country-slider"></span>
+              </label>
+              <span class="filter__country-item-text radio-text">
+                Эфиопия
+              </span>
+            </li>
+            <li class="filter__country-item">
+              <label class="filter__country-switch">
+                <input name="country" type="radio">
+                <span class="filter__country-slider"></span>
+              </label>
+              <span class="filter__country-item-text radio-text">
+                Колумбия
+              </span>
+            </li>
+            <li class="filter__country-item">
+              <label class="filter__country-switch">
+                <input name="country" type="radio">
+                <span class="filter__country-slider"></span>
+              </label>
+              <span class="filter__country-item-text radio-text">
+                Коста-Рика
+              </span>
+            </li>
+            <li class="filter__country-item">
+              <label class="filter__country-switch">
+                <input name="country" type="radio">
+                <span class="filter__country-slider"></span>
+              </label>
+              <span class="filter__country-item-text radio-text">
+                Перу
+              </span>
+            </li>
+          </ul>
         </fieldset>
-        <button class="filter__button" type="button">
+        <button class="filter__button button-apply button-filter-text" type="button">
           Применить
         </button>
-        <button class="filter__button" type="button">
+        <button class="filter__button button-reset button-filter-text" type="button">
           Сбросить
         </button>
       </div>
@@ -243,18 +265,18 @@
             <img class="catalog__image" src="./images/photo_milk_white_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -266,18 +288,18 @@
             <img class="catalog__image" src="./images/photo_milk_primary_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text ">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -289,18 +311,18 @@
             <img class="catalog__image" src="./images/photo_milk_black_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -312,18 +334,18 @@
             <img class="catalog__image" src="./images/photo_milk_pink_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -335,18 +357,18 @@
             <img class="catalog__image" src="./images/photo_milk_brown_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -358,18 +380,18 @@
             <img class="catalog__image" src="./images/photo_milk_beige_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle">
+            <h4 class="catalog__item-subtitle heading3">
               Декаф Флэт Уайт
             </h4>
-            <span class="catalog__item-text">
+            <span class="catalog__item-text small-text">
               Кофе без кофеина из Эфиопии с натуральным фермерским молоком
             </span>
           </div>
           <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text">
-              225₽
+            <span class="catalog__item-price-text price-text ">
+              225<span class="catalog__item-price-rouble rouble-text">a</span>
             </span>
-            <button class="catalog__item-price-button" type="button">
+            <button class="catalog__item-price-button regular_text" type="button">
               В корзину
             </button>
           </div>
@@ -395,8 +417,8 @@
       </div>
     </section>
     <section class="main-container__map map">
-      <h3>f</h3>
-      <img class="map__image" width="30" height="45" src="./icons/logo_mobile.svg" alt="картинка">
+      <h3 class="visually-hidden">f</h3>
+      <img class="map__image" width="320" height="420" src="./images/background_map_mobile@2x.jpg" alt="картинка">
     </section>
   </main>
   <footer class="main-footer footer">
