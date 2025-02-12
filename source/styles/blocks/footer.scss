@@ -1,0 +1,110 @@
+
+.footer__navigation {
+  padding: 16px 20px 14px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $basic_secondary;
+  box-sizing: border-box;
+}
+
+.footer__navigation-social-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.footer__navigation-social-item {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer__navigation-store {
+  list-style: none;
+  padding: 20px 20px 28px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid $basic_secondary;
+}
+
+.footer__navigation-subtitle {
+  margin: 0;
+  color: $basic_primary;
+  letter-spacing: 2%;
+}
+
+.footer__navigation-item-text {
+  text-transform: uppercase;
+}
+
+.footer__navigation-address {
+  list-style: none;
+  padding: 21px 20px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid $basic_secondary;
+}
+
+.footer__navigation-address-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__navigation-link {
+  text-decoration: none;
+  color: $basic_black;
+  font-style: normal;
+  display: flex;
+}
+
+.link-address::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  background-image: url("../../images/icon_address_mobile.svg");
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.link-tel::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  background-image: url("../../images/icon_phone_mobile.svg");
+  align-self: center;
+  margin-right: 6px;
+}
+
+.footer__developed {
+  padding: 20px 57px 30px;
+  color: $basic_grey;
+}
+
+.footer__developed-text {
+  display: flex;
+}
+
+.footer__developed-link {
+  color: $basic_grey;
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background-image: url("../../images/html_academy_logo.svg");
+  }
+}

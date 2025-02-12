@@ -104,11 +104,11 @@
 }
 
 .heading3 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat-ExtraBold", serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
+  letter-spacing: 0.01em;
   line-height: 32px;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -124,7 +124,7 @@
 .heading4 {
   font-family: "Montserrat", serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -155,6 +155,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.01em;
 }
 
 .preview-button-text {
@@ -198,4 +199,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.footer-link-text {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 16px;
+}
+
+.footer-aside-text {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
 }
