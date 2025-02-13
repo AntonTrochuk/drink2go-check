@@ -17,11 +17,25 @@
       <a class="navigation__logo" href="index.html">
         <picture class="main-header__picture-icon">
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./icons/logo_mobile.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./icons/logo_mobile.svg">
+          <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="./images/logo_tablet.svg">
           <img class="main-header__image" src="./images/logo_mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
         </picture>
       </a>
       <ul class="navigation__list">
+        <li class="navigation__wrapper">
+          <a class="navigation__wrapper-link nav-link-text" href="index.html">
+            Главная
+          </a>
+          <a class="navigation__wrapper-link nav-link-text" href="catalog.html">
+            Каталог
+          </a>
+          <a class="navigation__wrapper-link nav-link-text" href="#">
+            Доставка
+          </a>
+          <a class="navigation__wrapper-link nav-link-text" href="#">
+            О нас
+          </a>
+        </li>
         <li class="navigation__item">
           <button class="navigation__button button-user" type="button">
             <span class="visually-hidden">Войти</span>
@@ -32,27 +46,13 @@
             <span class="visually-hidden">Корзина</span>
           </button>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item item-wrapper">
           <button class="navigation__button button-wrapper" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <button class="navigation__button visually-hidden" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-        </li>
-        <li class="navigation__wrapper visually-hidden">
-          <a class="navigation__wrapper-link" href="index.html">
-            Главная
-          </a>
-          <a class="navigation__wrapper-link" href="catalog.html">
-            Каталог
-          </a>
-          <a class="navigation__wrapper-link" href="#">
-            Доставка
-          </a>
-          <a class="navigation__wrapper-link" href="#">
-            О нас
-          </a>
         </li>
       </ul>
     </div>
@@ -61,9 +61,12 @@
     <section class="main-container__preview preview">
       <div class="preview__block">
         <picture class="preview__picture">
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-          <img class="preview__image" src="./images/flat_white_img_mobile@2x.png" width="280" height="280" alt="Картинка Декаф Флэт Уайт">
+          <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/flat_white_img_desktop@2x.webp 2x" width="600" height="600">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="./images/flat_white_img_tablet@1x.webp 1x, ./images/flat_white_img_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./images/flat_white_img_mobile@1x.webp 1x, ./images/flat_white_img_mobile@2x.webp 2x" width="280" height="280">
+          <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="./images/flat_white_img_desktop@1x.png, ./images/flat_white_img_desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="./images/flat_white_img_tablet@1x.png, ./images/flat_white_img_tablet@2x.png 2x">
+          <img class="preview__image" src="./images/flat_white_img_mobile@1x.png" srcset="./images/flat_white_img_mobile@2x.png 2x" width="280" height="280" alt="Картинка Декаф Флэт Уайт">
         </picture>
         <span class="preview__badge badge-text">
           Новинка!
@@ -104,8 +107,8 @@
       <ul class="advantages__list">
         <li class="advantages__item">
           <picture class="advantages__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
+            <source media="(min-width: 1440px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_speed_mobile.svg">
+            <source media="(min-width: 768px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_speed_mobile.svg">
             <img class="preview__image" src="./images/advantages_icon_speed_mobile.svg" width="52" height="56" alt="Картинка Декаф Флэт Уайт">
           </picture>
           <div class="advantages__item-text-block">
@@ -119,8 +122,8 @@
         </li>
         <li class="advantages__item">
           <picture class="advantages__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
+            <source media="(min-width: 1440px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_fit_mobile.svg">
+            <source media="(min-width: 768px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_fit_mobile.svg">
             <img class="preview__image" src="./images/advantages_icon_fit_mobile.svg" width="52" height="56" alt="Картинка Декаф Флэт Уайт">
           </picture>
           <div class="advantages__item-text-block">
@@ -134,8 +137,8 @@
         </li>
         <li class="advantages__item">
           <picture class="advantages__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
+            <source media="(min-width: 1440px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_energy_mobile.svg">
+            <source media="(min-width: 768px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_energy_mobile.svg">
             <img class="preview__image" src="./images/advantages_icon_energy_mobile.svg" width="52" height="56" alt="Картинка Декаф Флэт Уайт">
           </picture>
           <div class="advantages__item-text-block">
@@ -149,8 +152,8 @@
         </li>
         <li class="advantages__item">
           <picture class="advantages__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
+            <source media="(min-width: 1440px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_eco_mobile.svg">
+            <source media="(min-width: 768px)" width="52" height="56" type="image/svg+xml" srcset="./images/advantages_icon_eco_mobile.svg">
             <img class="preview__image" src="./images/advantages_icon_eco_mobile.svg" width="52" height="56" alt="Картинка Декаф Флэт Уайт">
           </picture>
           <div class="advantages__item-text-block">
@@ -172,102 +175,106 @@
         Каталог кофейных напитков
       </h3>
       <div class="catalog__filter filter">
-        <fieldset class="filter__price-fieldset">
-          <legend class="filter__price-legend label-text">Цена</legend>
-          <div class="filter__range">
-            <div class="filter__range-scale">
-              <div class="filter__range-bar" style="left: 0; width: 260px">
-                <button class="filter__range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-                <button class="filter__range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену</span>
-                </button>
+        <div class="filter__price-block">
+          <fieldset class="filter__price-fieldset">
+            <legend class="filter__price-legend label-text">Цена</legend>
+            <div class="filter__range">
+              <div class="filter__range-scale">
+                <div class="filter__range-bar" style="left: 0; width: 260px">
+                  <button class="filter__range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="filter__range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="filter__price">
-            <label for="range-start"></label>
-            <label for="range-end"></label>
-            <input class="filter__price-range start input-text" type="text" name="start" id="range-start" value="0">
-            <input class="filter__price-range end input-text" type="text" name="end" id="range-end" value="900">
-          </div>
-        </fieldset>
-        <fieldset class="filter__availability-fieldset">
-          <legend class="filter__availability-legend label-text">Наличие молока</legend>
-          <label class="filter__availability-switch radio-text" for="availability-doesnt-matter">
-            <input name="availability" type="radio" id="availability-doesnt-matter" checked>
-            Неважно
-          </label>
-          <label class="filter__availability-switch radio-text" for="availability-animal">
-            <input name="availability" type="radio" id="availability-animal">
-            Только животное
-          </label>
-          <label class="filter__availability-switch radio-text" for="availability-vegetable">
-            <input name="availability" type="radio" id="availability-vegetable">
-            Только растительное
-          </label>
-          <label class="filter__availability-switch radio-text inactive-label" for="availability-without">
-            <input name="availability" type="radio" id="availability-without" disabled>
-            Без молока
-          </label>
-        </fieldset>
-        <fieldset class="filter__country-fieldset">
-          <legend class="filter__country-legend label-text">Страна произростания</legend>
-          <ul class="filter__country-list">
-            <li class="filter__country-item">
-              <label class="filter__country-switch">
-                <input name="country" type="radio" checked>
-                <span class="filter__country-slider"></span>
-              </label>
-              <span class="filter__country-item-text radio-text">
-                Бразилия
-              </span>
-            </li>
-            <li class="filter__country-item">
-              <label class="filter__country-switch">
-                <input name="country" type="radio">
-                <span class="filter__country-slider"></span>
-              </label>
-              <span class="filter__country-item-text radio-text">
-                Эфиопия
-              </span>
-            </li>
-            <li class="filter__country-item">
-              <label class="filter__country-switch">
-                <input name="country" type="radio">
-                <span class="filter__country-slider"></span>
-              </label>
-              <span class="filter__country-item-text radio-text">
-                Колумбия
-              </span>
-            </li>
-            <li class="filter__country-item">
-              <label class="filter__country-switch">
-                <input name="country" type="radio">
-                <span class="filter__country-slider"></span>
-              </label>
-              <span class="filter__country-item-text radio-text">
-                Коста-Рика
-              </span>
-            </li>
-            <li class="filter__country-item">
-              <label class="filter__country-switch">
-                <input name="country" type="radio">
-                <span class="filter__country-slider"></span>
-              </label>
-              <span class="filter__country-item-text radio-text">
-                Перу
-              </span>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="filter__button button-apply button-filter-text" type="button">
-          Применить
-        </button>
-        <button class="filter__button button-reset button-filter-text" type="button">
-          Сбросить
-        </button>
+            <div class="filter__price">
+              <label for="range-start"></label>
+              <label for="range-end"></label>
+              <input class="filter__price-range start input-text" type="text" name="start" id="range-start" value="0">
+              <input class="filter__price-range end input-text" type="text" name="end" id="range-end" value="900">
+            </div>
+          </fieldset>
+          <fieldset class="filter__availability-fieldset">
+            <legend class="filter__availability-legend label-text">Наличие молока</legend>
+            <label class="filter__availability-switch radio-text" for="availability-doesnt-matter">
+              <input name="availability" type="radio" id="availability-doesnt-matter" checked>
+              Неважно
+            </label>
+            <label class="filter__availability-switch radio-text" for="availability-animal">
+              <input name="availability" type="radio" id="availability-animal">
+              Только животное
+            </label>
+            <label class="filter__availability-switch radio-text" for="availability-vegetable">
+              <input name="availability" type="radio" id="availability-vegetable">
+              Только растительное
+            </label>
+            <label class="filter__availability-switch radio-text inactive-label" for="availability-without">
+              <input name="availability" type="radio" id="availability-without" disabled>
+              Без молока
+            </label>
+          </fieldset>
+          <fieldset class="filter__country-fieldset">
+            <legend class="filter__country-legend label-text">Страна произростания</legend>
+            <ul class="filter__country-list">
+              <li class="filter__country-item">
+                <label class="filter__country-switch">
+                  <input name="country" type="radio" checked>
+                  <span class="filter__country-slider"></span>
+                </label>
+                <span class="filter__country-item-text radio-text">
+                  Бразилия
+                </span>
+              </li>
+              <li class="filter__country-item">
+                <label class="filter__country-switch">
+                  <input name="country" type="radio">
+                  <span class="filter__country-slider"></span>
+                </label>
+                <span class="filter__country-item-text radio-text">
+                  Эфиопия
+                </span>
+              </li>
+              <li class="filter__country-item">
+                <label class="filter__country-switch">
+                  <input name="country" type="radio">
+                  <span class="filter__country-slider"></span>
+                </label>
+                <span class="filter__country-item-text radio-text">
+                  Колумбия
+                </span>
+              </li>
+              <li class="filter__country-item">
+                <label class="filter__country-switch">
+                  <input name="country" type="radio">
+                  <span class="filter__country-slider"></span>
+                </label>
+                <span class="filter__country-item-text radio-text">
+                  Коста-Рика
+                </span>
+              </li>
+              <li class="filter__country-item">
+                <label class="filter__country-switch">
+                  <input name="country" type="radio">
+                  <span class="filter__country-slider"></span>
+                </label>
+                <span class="filter__country-item-text radio-text">
+                  Перу
+                </span>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="filter__button-block">
+          <button class="filter__button button-apply button-filter-text" type="button">
+            Применить
+          </button>
+          <button class="filter__button button-reset button-filter-text" type="button">
+            Сбросить
+          </button>
+        </div>
       </div>
       <div class="catalog__select-block">
         <label class="catalog__select-text label-text" for="filterSelect">Сортировка:</label>
@@ -278,9 +285,12 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_white_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_white_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_white_tablet@1x.webp 1x, ./images/photo_milk_white_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_white_mobile@1x.webp 1x, ./images/photo_milk_white_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_white_tablet@1x.png, ./images/photo_milk_white_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_white_mobile@1x.png" srcset="./images/photo_milk_white_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -301,9 +311,12 @@
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_primary_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_primary_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_primary_tablet@1x.webp 1x, ./images/photo_milk_primary_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_primary_mobile@1x.webp 1x, ./images/photo_milk_primary_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_primary_img_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_primary_tablet@1x.png, ./images/photo_milk_primary_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_primary_mobile@1x.png" srcset="./images/photo_milk_primary_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -324,9 +337,12 @@
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_black_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_black_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_black_tablet@1x.webp 1x, ./images/photo_milk_black_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_black_mobile@1x.webp 1x, ./images/photo_milk_black_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_black_img_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_black_tablet@1x.png, ./images/photo_milk_black_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_black_mobile@1x.png" srcset="./images/photo_milk_black_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -347,9 +363,12 @@
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_pink_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_pink_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_pink_tablet@1x.webp 1x, ./images/photo_milk_pink_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_pink_mobile@1x.webp 1x, ./images/photo_milk_pink_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_pink_img_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_pink_tablet@1x.png, ./images/photo_milk_pink_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_pink_mobile@1x.png" srcset="./images/photo_milk_pink_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -370,9 +389,12 @@
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_brown_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_brown_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_brown_tablet@1x.webp 1x, ./images/photo_milk_brown_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_brown_mobile@1x.webp 1x, ./images/photo_milk_brown_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_brown_img_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_brown_tablet@1x.png, ./images/photo_milk_brown_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_brown_mobile@1x.png" srcset="./images/photo_milk_brown_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -393,9 +415,12 @@
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
-            <img class="catalog__image" src="./images/photo_milk_beige_mobile@2x.png" width="130" height="188" alt="Логотип Drink2Go">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_beige_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_beige_tablet@1x.webp 1x, ./images/photo_milk_beige_tablet@2x.webp 2x" width="130" height="188">
+            <source type="image/webp" srcset="./images/photo_milk_beige_mobile@1x.webp 1x, ./images/photo_milk_beige_mobile@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_beige_img_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
+            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_beige_tablet@1x.png, ./images/photo_milk_beige_tablet@2x.png 2x">
+            <img class="catalog__image" src="./images/photo_milk_beige_mobile@1x.png" srcset="./images/photo_milk_beige_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
           </picture>
           <div class="catalog__item-text-block">
             <h4 class="catalog__item-subtitle heading3">
@@ -446,15 +471,14 @@
     </section>
     <section class="main-container__map map">
       <h3 class="visually-hidden">f</h3>
-      <img class="map__image" width="320" height="420" src="./images/background_map_mobile@2x.jpg" alt="картинка">
     </section>
   </main>
   <footer class="main-footer footer">
     <div class="footer__navigation">
       <a class="footer__navigation-logo" href="#">
         <picture class="footer__navigation-picture">
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
+          <source media="(min-width: 1440px)" width="160" height="36" type="image/svg+xml" srcset="./images/logo_footer_desktop.svg">
+          <source media="(min-width: 768px)" width="160" height="36" type="image/svg+xml" srcset="./images/logo_footer_tablet.svg">
           <img class="footer__navigation-image" src="./images/logo_footer_mobile.svg" width="82" height="36" alt="Логотип Drink2Go">
         </picture>
       </a>
@@ -476,48 +500,50 @@
         </li>
       </ul>
     </div>
-    <ul class="footer__navigation-store">
-      <h4 class="footer__navigation-subtitle heading4">
-        Интернет-магазин
-      </h4>
-      <li class="footer__navigation-item-text footer-link-text">
-        Каталог
-      </li>
-      <li class="footer__navigation-item-text footer-link-text">
-        Доставка
-      </li>
-      <li class="footer__navigation-item-text footer-link-text">
-        Способы оплаты
-      </li>
-      <li class="footer__navigation-item-text footer-link-text">
-        О нас
-      </li>
-    </ul>
-    <ul class="footer__navigation-store">
-      <h4 class="footer__navigation-subtitle heading4">Медиа</h4>
-      <li class="footer__navigation-item-text footer-link-text">
-        Блог
-      </li>
-      <li class="footer__navigation-item-text footer-link-text">
-        Информация для СМИ
-      </li>
-      <li class="footer__navigation-item-text footer-link-text">
-        Правовая информация
-      </li>
-    </ul>
-    <ul class="footer__navigation-address">
-      <h4 class="footer__navigation-subtitle heading4">Контакты</h4>
-      <li class="footer__navigation-item-address">
-        <address class="footer__navigation-address-block-text">
-          <a class="footer__navigation-link link-address small-text" href="#">Санкт-Петербург, набережная реки Карповки, дом 5
-
-          </a>
-          <a class="footer__navigation-link link-tel small-text" href="tel:+7(999)9999999">+7 (999) 999-99-99
-
-          </a>
-        </address>
-      </li>
-    </ul>
+    <div class="footer__navigation-store-block">
+      <ul class="footer__navigation-store">
+        <h4 class="footer__navigation-subtitle heading4">
+          Интернет-магазин
+        </h4>
+        <li class="footer__navigation-item-text footer-link-text">
+          Каталог
+        </li>
+        <li class="footer__navigation-item-text footer-link-text">
+          Доставка
+        </li>
+        <li class="footer__navigation-item-text footer-link-text">
+          Способы оплаты
+        </li>
+        <li class="footer__navigation-item-text footer-link-text">
+          О нас
+        </li>
+      </ul>
+      <ul class="footer__navigation-store">
+        <h4 class="footer__navigation-subtitle heading4">Медиа</h4>
+        <li class="footer__navigation-item-text footer-link-text">
+          Блог
+        </li>
+        <li class="footer__navigation-item-text footer-link-text">
+          Информация для СМИ
+        </li>
+        <li class="footer__navigation-item-text footer-link-text">
+          Правовая информация
+        </li>
+      </ul>
+      <ul class="footer__navigation-address">
+        <h4 class="footer__navigation-subtitle heading4">Контакты</h4>
+        <li class="footer__navigation-item-address">
+          <address class="footer__navigation-address-block-text">
+            <a class="footer__navigation-link link-address small-text" href="#">
+              Санкт-Петербург, набережная реки Карповки, дом 5
+            </a>
+            <a class="footer__navigation-link link-tel small-text" href="tel:+7(999)9999999">
+              +7 (999) 999-99-99
+            </a>
+          </address>
+        </li>
+      </ul>
+    </div>
     <aside class="footer__developed">
       <span class="footer__developed-text footer-aside-text">
         Разработано в
