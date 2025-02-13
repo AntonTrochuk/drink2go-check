@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient( $background_flat_white 70%, $basic_white 30%);
+    background: linear-gradient( $background_flat_white 76.5%, $basic_white 22.5%);
   }
 }
 
@@ -14,7 +14,7 @@
   padding: 17px 20px 60px;
 
   @media (min-width: $tablet-width) {
-
+    padding: 60px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
 }
 
 .preview__subtitle {
-  margin: 0 0 10px;
+  margin: 0 0 16px;
 
   @media (min-width: $tablet-width) {
     order: -3;
@@ -37,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     order: -4;
+    margin: 0 0 4px;
   }
 }
 
@@ -45,6 +46,7 @@
 
   @media (min-width: $tablet-width) {
     order: -2;
+    margin: 0 80px 20px;
   }
 }
 
@@ -54,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -81,6 +84,13 @@
   background-image: url("../../icons/arrow_left.svg");
   border: none;
   background-color: rgba(0, 0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    background-position: 30px 310px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
 }
 
 .preview__button-right {
@@ -92,4 +102,11 @@
   background-image: url("../../icons/arrow_right.svg");
   border: none;
   background-color: rgba(0, 0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    background-position: 30px 310px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
 }
