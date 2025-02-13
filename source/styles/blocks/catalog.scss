@@ -3,7 +3,7 @@
   background-color: $background_lightest_grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0 20px 25px;
+    padding: 0 20px 90px;
   }
 }
 
@@ -21,7 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 30px;
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
   }
 }
 
@@ -144,6 +144,7 @@
 
 .start {
   color: $basic_grey;
+
   @media (min-width: $tablet-width) {
     margin-right: 45px;
   }
@@ -345,9 +346,9 @@ input:checked + .filter__country-slider::before {
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 30px;
+    margin: 0 0 70px;
   }
 }
 
@@ -360,6 +361,7 @@ input:checked + .filter__country-slider::before {
 
   @media (min-width: $tablet-width) {
     width: 349px;
+    padding: 50px 30px 30px 28px;
   }
 }
 
@@ -369,28 +371,36 @@ input:checked + .filter__country-slider::before {
   height: 188px;
 
   @media (min-width: $tablet-width) {
-    margin: 48px 0 31px;
+    margin: 0;
   }
 }
 
 .catalog__item-text-block {
   margin: 0 21px 19px;
+
   @media (min-width: $tablet-width) {
-    margin: 0 21px 19px 30px;
+    margin: 0;
+    padding: 0 0 18px;
   }
 }
 
 .catalog__item-subtitle {
   margin: 0 0 4px;
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 10px;
+    margin: 0;
+    padding: 30px 0 10px;
   }
 }
 
 .catalog__item-price-block {
   margin: 0 20px 20px 18px;
   display: flex;
-  gap: 50px;
+  gap: 99px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .catalog__item-price-rouble {
@@ -403,18 +413,34 @@ input:checked + .filter__country-slider::before {
   color: $basic_white;
   border-radius: 4px;
   border: none;
-  padding: 6px 21px 8px 45px;
-  background-image: url("../../images/catalog_button_union_mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: 20px 16px;
-  background-position: 20px 8px;
+  padding: 8px 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background-image: url("../../images/catalog_button_union_mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
+
 
 .catalog__pagination-list {
   padding: 0;
   list-style: none;
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-content: end;
+  }
 }
 
 .catalog__pagination-button {
