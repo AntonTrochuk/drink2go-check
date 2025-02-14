@@ -59,7 +59,7 @@
   </header>
   <main class="main-container">
     <section class="main-container__preview preview">
-      <div class="preview__block dots1">
+      <div class="preview__block">
         <picture class="preview__picture">
           <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/flat_white_img_desktop@2x.webp 2x" width="600" height="600">
           <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="./images/flat_white_img_tablet@1x.webp 1x, ./images/flat_white_img_tablet@2x.webp 2x">
@@ -91,9 +91,7 @@
               Заказать
             </button>
           </div>
-
         </div>
-
       </div>
       <button class="preview__button-left" type="button">
         <span class="visually-hidden">Листать влево</span>
@@ -101,6 +99,17 @@
       <button class="preview__button-right" type="button">
         <span class="visually-hidden">Листать вправо</span>
       </button>
+      <div class="preview__dots-block">
+        <button class="preview__dots-button active-dots" type="button">
+          <span class="visually-hidden">Первый слайд</span>
+        </button>
+        <button class="preview__dots-button" type="button">
+          <span class="visually-hidden">Второй слайд</span>
+        </button>
+        <button class="preview__dots-button" type="button">
+          <span class="visually-hidden">Третий слайд</span>
+        </button>
+      </div>
     </section>
     <section class="main-container__advantages advantages">
       <h2 class="advantages__title badge-text">

@@ -5,6 +5,13 @@
   @media (min-width: $tablet-width) {
     padding: 0 20px 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px 25px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }
 
 .filter {
@@ -15,6 +22,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3 / 5;
+  }
 }
 
 .filter__price-block {
@@ -22,6 +33,10 @@
     display: flex;
     gap: 30px;
     margin: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -46,6 +61,11 @@
     margin: 0;
     padding: 80px 0 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
 }
 
 .catalog__subtitle {
@@ -53,6 +73,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
 }
 
@@ -334,6 +359,11 @@ input:checked + .filter__country-slider::before {
     align-items: center;
     margin: 0 5px 31px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
 }
 
 .catalog__list {
@@ -349,6 +379,11 @@ input:checked + .filter__country-slider::before {
     flex-flow: row wrap;
     gap: 30px;
     margin: 0 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
   }
 }
 
@@ -442,6 +477,12 @@ input:checked + .filter__country-slider::before {
   }
 }
 
+.catalog__pagination-nav {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
+}
 
 .catalog__pagination-list {
   padding: 0;
