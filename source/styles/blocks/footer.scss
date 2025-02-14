@@ -76,7 +76,7 @@
 .footer__navigation-store-block {
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 74px;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +97,12 @@
   border-bottom: 1px solid $basic_secondary;
 
   &:nth-child(2) {
+    padding: 21px 0 27px 19px;
+
+    @media (min-width: $tablet-width) {
+      padding: 12px 0 0 107px;
+    }
+
     @media (min-width: $desktop-width) {
       padding: 14px 0 0 203px;
     }
@@ -104,7 +110,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 12px 0 28px 26px;
+    padding: 12px 0 28px 20px;
     flex-shrink: 0;
   }
 
@@ -134,7 +140,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 11px 25px 0 1px;
+    padding: 12px 25px 0 73px;
   }
 
   @media (min-width: $desktop-width) {
