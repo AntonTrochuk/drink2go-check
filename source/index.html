@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <h1 class="visually-hidden">Drink2Go</h1>
     <div class="main-header__navigation navigation">
       <a class="navigation__logo" href="index.html">
@@ -22,7 +22,7 @@
         </picture>
       </a>
       <ul class="navigation__list">
-        <li class="navigation__wrapper">
+        <li class="navigation__wrapper js-toggle-button">
           <a class="navigation__wrapper-link wrapper-link--active nav-link-text" href="index.html">
             Главная
           </a>
@@ -58,7 +58,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="main-container__preview preview">
+    <section class="main-container__preview preview" data-test="hero">
       <div class="preview__block">
         <picture class="preview__picture">
           <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/flat_white_img_desktop@2x.webp 2x" width="600" height="600">
@@ -93,13 +93,13 @@
           </div>
         </div>
       </div>
-      <button class="preview__button-left" type="button">
+      <button class="preview__button-left slider-button-prev" type="button">
         <span class="visually-hidden">Листать влево</span>
       </button>
-      <button class="preview__button-right" type="button">
+      <button class="preview__button-right slider-button-next" type="button">
         <span class="visually-hidden">Листать вправо</span>
       </button>
-      <div class="preview__dots-block">
+      <div class="preview__dots-block slider-pagination">
         <button class="preview__dots-button active-dots" type="button">
           <span class="visually-hidden">Первый слайд</span>
         </button>
@@ -111,7 +111,7 @@
         </button>
       </div>
     </section>
-    <section class="main-container__advantages advantages">
+    <section class="main-container__advantages advantages" data-test="features">
       <h2 class="advantages__title badge-text">
         Преимущества
       </h2>
@@ -181,7 +181,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__catalog catalog">
+    <section class="main-container__catalog catalog" data-test="catalog">
       <h2 class="catalog__title badge-text">
         Каталог
       </h2>
@@ -483,12 +483,12 @@
         </ul>
       </div>
     </section>
-    <section class="main-container__map map">
+    <section class="main-container__map map" data-test="map">
       <h3 class="visually-hidden">Как к нам попасть</h3>
     </section>
   </main>
-  <footer class="main-footer footer">
-    <div class="footer__navigation">
+  <footer class="main-footer footer" data-test="footer">
+    <div class=" footer__navigation">
       <a class="footer__navigation-logo" href="#">
         <picture class="footer__navigation-picture">
           <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="./images/logo_footer_desktop.svg">
