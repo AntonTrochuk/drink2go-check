@@ -5,7 +5,8 @@
   margin: 50px 20px 60px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    width: 728px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +27,7 @@
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     gap: 48px 30px;
-    margin: 0 0 100px;
+    margin: 0 10px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +71,7 @@
   color: $basic_primary;
 
   @media (min-width: $tablet-width) {
-    margin: 57px 0 4px;
+    margin: 56px 0 5px;
   }
 
   @media (min-width: $desktop-width) {
