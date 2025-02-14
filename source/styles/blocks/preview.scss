@@ -25,6 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1360px;
+    margin: 0 auto;
     flex-direction: row-reverse;
     padding: 30px 0 80px 104px;
     align-items: start;
