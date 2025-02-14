@@ -23,7 +23,7 @@
       </a>
       <ul class="navigation__list">
         <li class="navigation__wrapper js-toggle-button">
-          <a class="navigation__wrapper-link wrapper-link--active nav-link-text" href="index.html">
+          <a class="navigation__wrapper-link navigation__wrapper-link--active nav-link-text" href="index.html">
             Главная
           </a>
           <a class="navigation__wrapper-link nav-link-text" href="catalog.html">
@@ -129,7 +129,7 @@
             <h4 class="advantages__item-subtitle heading3">
               Скорость
             </h4>
-            <span class="advantages__item-text regular_text">
+            <span class="advantages__item-text regular-text">
               Готовый напиток всегда под рукой — просто открой банку
             </span>
           </div>
@@ -144,7 +144,7 @@
             <h4 class="advantages__item-subtitle heading3">
               Удобство
             </h4>
-            <span class="advantages__item-text regular_text">
+            <span class="advantages__item-text regular-text">
               Легко помещается и в карман,<br>и в маленькую сумочку
             </span>
           </div>
@@ -159,7 +159,7 @@
             <h4 class="advantages__item-subtitle heading3">
               Бодрость
             </h4>
-            <span class="advantages__item-text regular_text">
+            <span class="advantages__item-text regular-text">
               Сбалансированная доза кофеина даст мощный заряд энергии
             </span>
           </div>
@@ -174,7 +174,7 @@
             <h4 class="advantages__item-subtitle heading3">
               Экологичность
             </h4>
-            <span class="advantages__item-text regular_text">
+            <span class="advantages__item-text regular-text">
               Вся упаковка сделана<br>из перерабатываемых материалов
             </span>
           </div>
@@ -291,7 +291,7 @@
         </div>
       </div>
       <div class="catalog__select-block">
-        <label class="catalog__select-text label-text" for="filterSelect">Сортировка:</label>
+        <label class="catalog__select-text label-text" for="filter-select">Сортировка:</label>
         <select class="catalog__select label-text" name="#" id="filter-select">
           <option value="default">по умолчанию</option>
         </select>
@@ -468,7 +468,7 @@
             <button class="catalog__pagination-button button-filter-text" type="button">1</button>
           </li>
           <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button pagination-button--active button-filter-text" type="button">2</button>
+            <button class="catalog__pagination-button catalog__pagination-button--active button-filter-text" type="button">2</button>
           </li>
           <li class="catalog__pagination-item">
             <button class="catalog__pagination-button button-filter-text" type="button">3</button>
@@ -516,9 +516,11 @@
     </div>
     <div class="footer__navigation-store-block">
       <ul class="footer__navigation-store">
-        <h4 class="footer__navigation-subtitle heading4">
-          Интернет-магазин
-        </h4>
+        <li class="footer__navigation-item-subtitle">
+          <h4 class="footer__navigation-subtitle heading4">
+            Интернет-магазин
+          </h4>
+        </li>
         <li class="footer__navigation-item-text footer-link-text">
           Каталог
         </li>
@@ -533,7 +535,11 @@
         </li>
       </ul>
       <ul class="footer__navigation-store">
-        <h4 class="footer__navigation-subtitle heading4">Медиа</h4>
+        <li class="footer__navigation-item-subtitle">
+          <h4 class="footer__navigation-subtitle heading4">
+            Медиа
+          </h4>
+        </li>
         <li class="footer__navigation-item-text footer-link-text">
           Блог
         </li>
@@ -545,7 +551,11 @@
         </li>
       </ul>
       <ul class="footer__navigation-address">
-        <h4 class="footer__navigation-subtitle heading4">Контакты</h4>
+        <li class="footer__navigation-item-subtitle">
+          <h4 class="footer__navigation-subtitle heading4">
+            Контакты
+          </h4>
+        </li>
         <li class="footer__navigation-item-address">
           <address class="footer__navigation-address-block-text">
             <a class="footer__navigation-link link-address small-text" href="#">

@@ -20,10 +20,7 @@
 
 @font-face {
   font-family: "rouble";
-  src: url("../../fonts/rouble-webfont.eot");
-  src:
-    url("../../fonts/rouble-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/rouble-webfont.woff") format("woff");
+  src: url("../../fonts/rouble-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -156,9 +153,13 @@
 .label-text {
   font-family: "Montserrat", serif;
   font-weight: 600;
-  font-size: 16.1px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.01em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16.1px;
+  }
 }
 
 .preview-button-text {
@@ -169,7 +170,7 @@
   text-align: center;
 }
 
-.regular_text {
+.regular-text {
   font-family: "Montserrat", serif;
   font-weight: 400;
   font-size: 14px;

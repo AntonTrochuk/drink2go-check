@@ -566,7 +566,7 @@ input:checked + .filter__country-slider::before {
   height: 40px;
 }
 
-.pagination-button--active {
+.catalog__pagination-button--active {
   color: $basic_black;
   background-color: $background_lightest_grey;
   font-weight: bolder;
