@@ -450,19 +450,22 @@ input:checked + .filter__country-slider::before {
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 13px 0 0;
     justify-content: end;
   }
 }
 
 .catalog__pagination-button {
-  width: 40px;
-  height: 40px;
   border: none;
   box-sizing: border-box;
   border-radius: 4px;
   color: $basic_primary;
   background-color: $basic_white;
+}
+
+.catalog__pagination-button:not(.pagination-back, .pagination-forward) {
+  width: 40px;
+  height: 40px;
 }
 
 .pagination-button--active {
@@ -476,19 +479,21 @@ input:checked + .filter__country-slider::before {
   background-repeat: no-repeat;
   background-size: 10px 10px;
   background-position: 50%;
+  width: 40px;
+  height: 40px;
 
   &::before {
     @media (min-width: $tablet-width) {
       content: "Назад";
       display: inline-block;
-      width: 91px;
-      height: 40px;
     }
   }
 
   @media (min-width: $tablet-width) {
     background-image: none;
     background-size: none;
+    width: 91px;
+    height: 40px;
   }
 }
 
@@ -497,4 +502,20 @@ input:checked + .filter__country-slider::before {
   background-repeat: no-repeat;
   background-size: 10px 10px;
   background-position: 50%;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "Вперед";
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-size: none;
+    width: 91px;
+    height: 40px;
+  }
 }
