@@ -142,7 +142,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 60px 0 0;
-    gap: 1px;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
