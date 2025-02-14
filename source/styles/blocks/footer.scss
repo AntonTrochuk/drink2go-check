@@ -1,3 +1,10 @@
+.footer {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+  }
+}
 
 .footer__navigation {
   padding: 19px 20px 14px;
@@ -10,6 +17,38 @@
     border-bottom: none;
     padding: 40px 18px 14px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    grid-auto-columns: min-content;
+    flex-direction: column;
+    padding: 40px 0 0 39px;
+    align-items: start;
+    gap: 48px;
+  }
+}
+
+.footer__navigation-logo {
+  @media (min-width: $desktop-width) {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "Интернет-магазин кофейных напитков";
+      font-family: "Montserrat", serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $basic_black;
+    }
+  }
 }
 
 .footer__navigation-social-list {
@@ -19,6 +58,14 @@
   display: flex;
   margin-left: auto;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+  }
 }
 
 .footer__navigation-social-item {
@@ -31,6 +78,13 @@
     display: flex;
     gap: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 36px 0 0;
+  }
 }
 
 .footer__navigation-store {
@@ -42,10 +96,20 @@
   gap: 20px;
   border-bottom: 1px solid $basic_secondary;
 
+  &:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      padding: 14px 0 0 203px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 12px 0px 28px 26px;
+    padding: 12px 0 28px 26px;
     flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0 28px 63px;
   }
 }
 
@@ -71,6 +135,10 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 11px 25px 0 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 0 167px;
   }
 }
 
@@ -113,6 +181,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 9px 57px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 0 0 40px;
   }
 }
 

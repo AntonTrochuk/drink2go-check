@@ -12,13 +12,13 @@
 
   &::after {
     @media (min-width: $desktop-width) {
-      content: 'Интернет-магазин кофейных напитков';
+      content: "Интернет-магазин кофейных напитков";
       display: inline-block;
       font-family: "Montserrat", serif;
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      color:$basic_black;
+      color: $basic_black;
       margin: 0 0 0 20px;
       width: 126px;
     }
@@ -56,7 +56,6 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
-
 }
 
 .navigation__item {
@@ -82,7 +81,7 @@
 .item-user {
   &::after {
     @media (min-width: $desktop-width) {
-      content:'Войти';
+      content: "Войти";
       display: inline-block;
       text-transform: uppercase;
       font-family: "Montserrat", serif;
@@ -106,7 +105,7 @@
 .item-union {
   &::after {
     @media (min-width: $desktop-width) {
-      content:'Корзина';
+      content: "Корзина";
       display: inline-block;
       text-transform: uppercase;
       font-family: "Montserrat", serif;
@@ -119,7 +118,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 8px;
-    padding: 28px 0px 29px 40px;
+    padding: 28px 0 29px 40px;
   }
 }
 

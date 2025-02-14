@@ -1,16 +1,17 @@
 .map {
   min-width: 320px;
   min-height: 420px;
-  background-image: url('../../images/background_map_mobile@2x.jpg');
+  background-image: url("../../images/background_map_mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    background-image: url('../../images/background_map_tablet@2x.jpg');
+    background-image: url("../../images/background_map_tablet@2x.jpg");
     min-height: 480px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url('../../images/background_map_desktop@2x.jpg');
+    background-image: url("../../images/background_map_desktop@2x.jpg");
+    min-height: 540px;
   }
 }
