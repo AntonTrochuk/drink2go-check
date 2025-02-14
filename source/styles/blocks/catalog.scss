@@ -255,6 +255,10 @@ input[type="radio"]:disabled {
   border-color: $alt_light_grey;
 }
 
+.filter__country-input:disabled + .filter__country-slider {
+  background-color: $alt_light_grey;
+}
+
 .inactive-label {
   color: $basic_grey;
 }
@@ -305,7 +309,7 @@ input[type="radio"]:disabled {
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background-color: #cccccc;
+  background-color: $basic_grey;
   transition: 0.4s;
   border-radius: 34px;
 
