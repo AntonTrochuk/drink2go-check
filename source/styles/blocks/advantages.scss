@@ -1,8 +1,9 @@
 .advantages {
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 20px 60px;
+  margin: 50px auto 60px;
 
   @media (min-width: $tablet-width) {
     width: 728px;
@@ -10,7 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 40px;
+    width: 1360px;
+    margin: 0 auto;
     padding: 100px 0 0;
   }
 }
