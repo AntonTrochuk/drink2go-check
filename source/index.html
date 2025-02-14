@@ -16,7 +16,7 @@
     <div class="main-header__navigation navigation">
       <a class="navigation__logo" href="index.html">
         <picture class="main-header__picture-icon">
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./icons/logo_mobile.svg">
+          <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="./images/logo_desktop.svg">
           <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="./images/logo_tablet.svg">
           <img class="main-header__image" src="./images/logo_mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
         </picture>
@@ -36,12 +36,12 @@
             О нас
           </a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item item-user">
           <button class="navigation__button button-user" type="button">
             <span class="visually-hidden">Войти</span>
           </button>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item item-union">
           <button class="navigation__button button-union" type="button">
             <span class="visually-hidden">Корзина</span>
           </button>
@@ -59,7 +59,7 @@
   </header>
   <main class="main-container">
     <section class="main-container__preview preview">
-      <div class="preview__block">
+      <div class="preview__block dots1">
         <picture class="preview__picture">
           <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/flat_white_img_desktop@2x.webp 2x" width="600" height="600">
           <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="./images/flat_white_img_tablet@1x.webp 1x, ./images/flat_white_img_tablet@2x.webp 2x">
@@ -68,27 +68,32 @@
           <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="./images/flat_white_img_tablet@1x.png, ./images/flat_white_img_tablet@2x.png 2x">
           <img class="preview__image" src="./images/flat_white_img_mobile@1x.png" srcset="./images/flat_white_img_mobile@2x.png 2x" width="280" height="280" alt="Картинка Декаф Флэт Уайт">
         </picture>
-        <span class="preview__badge badge-text">
-          Новинка!
-        </span>
-        <h3 class="preview__subtitle slider-heading">
-          Декаф Флэт Уайт
-        </h3>
-        <p class="preview__text slider-description">
-          Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
-          что нужно для расслабления после тяжёлого рабочего дня
-        </p>
-        <div class="preview__block-price">
-          <span class="preview__text-old old-price-text">
-            295 <span class="preview__text-rouble-old rouble-old-text">a</span>
+
+        <div class="preview__block-text">
+          <span class="preview__badge badge-text">
+            Новинка!
           </span>
-          <span class="preview__text-price price-text">
-            225 <span class="preview__text-rouble rouble-text">a</span>
-          </span>
-          <button class="preview__button preview-button-text" type="button">
-            Заказать
-          </button>
+          <h3 class="preview__subtitle slider-heading">
+            Декаф Флэт Уайт
+          </h3>
+          <p class="preview__text slider-description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
+            что нужно для расслабления после тяжёлого рабочего дня
+          </p>
+          <div class="preview__block-price">
+            <span class="preview__text-old old-price-text">
+              295 <span class="preview__text-rouble-old rouble-old-text">a</span>
+            </span>
+            <span class="preview__text-price price-text">
+              225 <span class="preview__text-rouble rouble-text">a</span>
+            </span>
+            <button class="preview__button preview-button-text" type="button">
+              Заказать
+            </button>
+          </div>
+
         </div>
+
       </div>
       <button class="preview__button-left" type="button">
         <span class="visually-hidden">Листать влево</span>

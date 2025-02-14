@@ -8,15 +8,39 @@
   display: flex;
   align-items: center;
   margin: 0 0 0 20px;
+  text-decoration: none;
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: 'Интернет-магазин кофейных напитков';
+      display: inline-block;
+      font-family: "Montserrat", serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color:$basic_black;
+      margin: 0 0 0 20px;
+      width: 126px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 67px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 163px 0 40px;
   }
 }
 
 .main-header__picture-icon {
   @media (min-width: $tablet-width) {
     width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
     height: 36px;
   }
 }
@@ -32,6 +56,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+
 }
 
 .navigation__item {
@@ -40,6 +65,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 32px 22px 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -50,8 +79,48 @@
   background-color: $basic_white;
 }
 
+.item-user {
+  &::after {
+    @media (min-width: $desktop-width) {
+      content:'Войти';
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: "Montserrat", serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 8px;
+    padding: 28px 23px 29px 22px;
+  }
+}
+
 .button-user {
   background-image: url("../../icons/user_icon.svg");
+}
+
+.item-union {
+  &::after {
+    @media (min-width: $desktop-width) {
+      content:'Корзина';
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: "Montserrat", serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 8px;
+    padding: 28px 0px 29px 40px;
+  }
 }
 
 .button-union {
@@ -75,6 +144,12 @@
     display: flex;
     margin: 0 60px 0 0;
     gap: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    margin: 0;
+    padding: 0 161px 0 0;
   }
 }
 
