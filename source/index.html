@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,28 +15,37 @@
   <header class="main-header" data-test="header">
     <h1 class="visually-hidden">Drink2Go</h1>
     <div class="main-header__navigation navigation">
-      <a class="navigation__logo" href="index.html">
+      <a class="navigation__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <picture class="main-header__picture-icon">
           <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="./images/logo_desktop.svg">
           <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="./images/logo_tablet.svg">
           <img class="main-header__image" src="./images/logo_mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
         </picture>
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__wrapper js-toggle-button">
+
+      <ul class="navigation__list-wrapper">
+        <li class="navigation__wrapper-item">
           <a class="navigation__wrapper-link navigation__wrapper-link--active nav-link-text" href="index.html">
             Главная
           </a>
+        </li>
+        <li class="navigation__wrapper-item">
           <a class="navigation__wrapper-link nav-link-text" href="catalog.html">
             Каталог
           </a>
+        </li>
+        <li class="navigation__wrapper-item">
           <a class="navigation__wrapper-link nav-link-text" href="#">
             Доставка
           </a>
+        </li>
+        <li class="navigation__wrapper-item">
           <a class="navigation__wrapper-link nav-link-text" href="#">
             О нас
           </a>
         </li>
+      </ul>
+      <ul class="navigation__list-button">
         <li class="navigation__item item-user">
           <button class="navigation__button button-user" type="button">
             <span class="visually-hidden">Войти</span>
@@ -47,7 +57,7 @@
           </button>
         </li>
         <li class="navigation__item item-wrapper">
-          <button class="navigation__button button-wrapper" type="button">
+          <button class="navigation__button button-wrapper js-toggle-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <button class="navigation__button visually-hidden" type="button">
