@@ -8,7 +8,6 @@
 
   @media (min-width: $desktop-width) {
     background: none;
-    background-color: $background_flat_white;
   }
 }
 
@@ -275,4 +274,20 @@
   @media (min-width: $desktop-width) {
     background-color: $basic_primary;
   }
+}
+
+.slider-color-flat-white {
+  background-color: $background_flat_white;
+}
+
+.slider-color-lavender {
+  background-color: $background_lavender_latte;
+}
+
+.slider-color-espresso {
+  background-color: $background_espresso;
+}
+
+.slider-block {
+  display: none;
 }

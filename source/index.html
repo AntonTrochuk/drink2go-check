@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="./vendor/nouislider/nouislider.js" async></script>
 </head>
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <h1 class="visually-hidden">Drink2Go</h1>
     <div class="main-header__navigation navigation">
       <a class="navigation__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <picture class="main-header__picture-icon">
@@ -67,6 +67,7 @@
     </div>
   </header>
   <main class="main-container">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков «Drink2Go»</h1>
     <section class="main-container__preview preview" data-test="hero">
       <div class="preview__block">
         <picture class="preview__picture">
@@ -94,6 +95,72 @@
             </span>
             <span class="preview__text-price price-text">
               225 <span class="preview__text-rouble rouble-text">a</span>
+            </span>
+            <button class="preview__button preview-button-text" type="button">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview__block slider-block">
+        <picture class="preview__picture">
+          <source media="(min-width: 1440px)" type="image/webp" srcset="./images/lavender_img_desktop@1x.webp 1x, ./images/lavender_img_desktop@2x.webp 2x" width="600" height="600">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="./images/lavender_img_tablet@1x.webp 1x, ./images/lavender_img_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./images/lavender_img_mobile@1x.webp 1x, ./images/lavender_img_mobile@2x.webp 2x" width="280" height="280">
+          <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="./images/lavender_img_desktop@1x.png, ./images/lavender_img_desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="./images/lavender_img_tablet@1x.png, ./images/lavender_img_tablet@2x.png 2x">
+          <img class="preview__image" src="./images/lavender_img_mobile@1x.png" srcset="./images/lavender_img_mobile@2x.png@2x.png 2x" width="280" height="280" alt="Картинка Декаф Флэт Уайт">
+        </picture>
+        <div class="preview__block-text">
+          <span class="preview__badge badge-text">
+            Новинка!
+          </span>
+          <h3 class="preview__subtitle slider-heading">
+            Лавандовый Латте
+          </h3>
+          <p class="preview__text slider-description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <div class="preview__block-price">
+            <span class="preview__text-old old-price-text">
+              285 <span class="preview__text-rouble-old rouble-old-text">a</span>
+            </span>
+            <span class="preview__text-price price-text">
+              265 <span class="preview__text-rouble rouble-text">a</span>
+            </span>
+            <button class="preview__button preview-button-text" type="button">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview__block slider-block">
+        <picture class="preview__picture">
+          <source media="(min-width: 1440px)" type="image/webp" srcset="./images/espresso_img_desktop@1x.webp 1x, ./images/espresso_img_desktop@2x.webp 2x" width="600" height="600">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/webp" srcset="./images/espresso_img_tablet@1x.webp 1x, ./images/espresso_img_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./images/espresso_img_mobile@1x.webp 1x, ./images/espresso_img_mobile@2x.webp 2x" width="280" height="280">
+          <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="./images/espresso_img_desktop@1x.png, ./images/espresso_img_desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="./images/espresso_img_tablet@1x.png, ./images/espresso_img_tablet@2x.png 2x">
+          <img class="preview__image" src="./images/espresso_img_mobile@1x.png" srcset="./images/espresso_img_mobile@2x.png 2x" width="280" height="280" alt="Картинка Декаф Флэт Уайт">
+        </picture>
+        <div class="preview__block-text">
+          <span class="preview__badge badge-text">
+            Новинка!
+          </span>
+          <h3 class="preview__subtitle slider-heading">
+            Тройной Эспрессо
+          </h3>
+          <p class="preview__text slider-description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <div class="preview__block-price">
+            <span class="preview__text-old old-price-text">
+              395 <span class="preview__text-rouble-old rouble-old-text">a</span>
+            </span>
+            <span class="preview__text-price price-text">
+              375 <span class="preview__text-rouble rouble-text">a</span>
             </span>
             <button class="preview__button preview-button-text" type="button">
               Заказать
