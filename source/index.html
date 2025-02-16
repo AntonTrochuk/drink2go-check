@@ -192,305 +192,307 @@
       </ul>
     </section>
     <section class="main-container__catalog catalog" data-test="catalog">
-      <h2 class="catalog__title badge-text">
-        Каталог
-      </h2>
-      <h3 class="catalog__subtitle heading2">
-        Каталог кофейных напитков
-      </h3>
-      <div class="catalog__filter filter">
-        <div class="filter__price-block">
-          <fieldset class="filter__price-fieldset">
-            <legend class="filter__price-legend label-text">Цена</legend>
-            <div class="filter__range">
-              <div class="filter__range-scale">
-                <div class="filter__range-bar">
-                  <button class="filter__range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <button class="filter__range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
+      <div class="catalog__container">
+        <h2 class="catalog__title badge-text">
+          Каталог
+        </h2>
+        <h3 class="catalog__subtitle heading2">
+          Каталог кофейных напитков
+        </h3>
+        <div class="catalog__filter filter">
+          <div class="filter__price-block">
+            <fieldset class="filter__price-fieldset">
+              <legend class="filter__price-legend label-text">Цена</legend>
+              <div class="filter__range">
+                <div class="filter__range-scale">
+                  <div class="filter__range-bar">
+                    <button class="filter__range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="filter__range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="filter__price">
-              <label for="range-start"></label>
-              <label for="range-end"></label>
-              <input class="filter__price-range start input-text" type="text" name="start" id="range-start" value="0">
-              <input class="filter__price-range end input-text" type="text" name="end" id="range-end" value="900">
-            </div>
-          </fieldset>
-          <fieldset class="filter__availability-fieldset">
-            <legend class="filter__availability-legend label-text">Наличие молока</legend>
-            <label class="filter__availability-switch radio-text" for="availability-doesnt-matter">
-              <input name="availability" type="radio" id="availability-doesnt-matter" checked>
-              Неважно
-            </label>
-            <label class="filter__availability-switch radio-text" for="availability-animal">
-              <input name="availability" type="radio" id="availability-animal">
-              Только животное
-            </label>
-            <label class="filter__availability-switch radio-text" for="availability-vegetable">
-              <input name="availability" type="radio" id="availability-vegetable">
-              Только растительное
-            </label>
-            <label class="filter__availability-switch radio-text inactive-label" for="availability-without">
-              <input name="availability" type="radio" id="availability-without" disabled>
-              Без молока
-            </label>
-          </fieldset>
-          <fieldset class="filter__country-fieldset">
-            <legend class="filter__country-legend label-text">Страна произростания</legend>
-            <ul class="filter__country-list">
-              <li class="filter__country-item">
-                <label class="filter__country-switch">
-                  <input name="country" type="radio" checked>
-                  <span class="filter__country-slider"></span>
-                </label>
-                <span class="filter__country-item-text radio-text">
-                  Бразилия
-                </span>
-              </li>
-              <li class="filter__country-item">
-                <label class="filter__country-switch">
-                  <input name="country" type="radio">
-                  <span class="filter__country-slider"></span>
-                </label>
-                <span class="filter__country-item-text radio-text">
-                  Эфиопия
-                </span>
-              </li>
-              <li class="filter__country-item">
-                <label class="filter__country-switch">
-                  <input name="country" type="radio">
-                  <span class="filter__country-slider"></span>
-                </label>
-                <span class="filter__country-item-text radio-text">
-                  Колумбия
-                </span>
-              </li>
-              <li class="filter__country-item">
-                <label class="filter__country-switch">
-                  <input name="country" type="radio">
-                  <span class="filter__country-slider"></span>
-                </label>
-                <span class="filter__country-item-text radio-text">
-                  Коста-Рика
-                </span>
-              </li>
-              <li class="filter__country-item inactive-label">
-                <label class="filter__country-switch">
-                  <input class="filter__country-input" name="country" type="radio" disabled>
-                  <span class="filter__country-slider"></span>
-                </label>
-                <span class="filter__country-item-text radio-text">
-                  Перу
-                </span>
-              </li>
-            </ul>
-          </fieldset>
+              <div class="filter__price">
+                <label for="range-start"></label>
+                <label for="range-end"></label>
+                <input class="filter__price-range start input-text" type="text" name="start" id="range-start" value="0">
+                <input class="filter__price-range end input-text" type="text" name="end" id="range-end" value="900">
+              </div>
+            </fieldset>
+            <fieldset class="filter__availability-fieldset">
+              <legend class="filter__availability-legend label-text">Наличие молока</legend>
+              <label class="filter__availability-switch radio-text" for="availability-doesnt-matter">
+                <input name="availability" type="radio" id="availability-doesnt-matter" checked>
+                Неважно
+              </label>
+              <label class="filter__availability-switch radio-text" for="availability-animal">
+                <input name="availability" type="radio" id="availability-animal">
+                Только животное
+              </label>
+              <label class="filter__availability-switch radio-text" for="availability-vegetable">
+                <input name="availability" type="radio" id="availability-vegetable">
+                Только растительное
+              </label>
+              <label class="filter__availability-switch radio-text inactive-label" for="availability-without">
+                <input name="availability" type="radio" id="availability-without" disabled>
+                Без молока
+              </label>
+            </fieldset>
+            <fieldset class="filter__country-fieldset">
+              <legend class="filter__country-legend label-text">Страна произростания</legend>
+              <ul class="filter__country-list">
+                <li class="filter__country-item">
+                  <label class="filter__country-switch">
+                    <input name="country" type="radio" checked>
+                    <span class="filter__country-slider"></span>
+                  </label>
+                  <span class="filter__country-item-text radio-text">
+                    Бразилия
+                  </span>
+                </li>
+                <li class="filter__country-item">
+                  <label class="filter__country-switch">
+                    <input name="country" type="radio">
+                    <span class="filter__country-slider"></span>
+                  </label>
+                  <span class="filter__country-item-text radio-text">
+                    Эфиопия
+                  </span>
+                </li>
+                <li class="filter__country-item">
+                  <label class="filter__country-switch">
+                    <input name="country" type="radio">
+                    <span class="filter__country-slider"></span>
+                  </label>
+                  <span class="filter__country-item-text radio-text">
+                    Колумбия
+                  </span>
+                </li>
+                <li class="filter__country-item">
+                  <label class="filter__country-switch">
+                    <input name="country" type="radio">
+                    <span class="filter__country-slider"></span>
+                  </label>
+                  <span class="filter__country-item-text radio-text">
+                    Коста-Рика
+                  </span>
+                </li>
+                <li class="filter__country-item inactive-label">
+                  <label class="filter__country-switch">
+                    <input class="filter__country-input" name="country" type="radio" disabled>
+                    <span class="filter__country-slider"></span>
+                  </label>
+                  <span class="filter__country-item-text radio-text">
+                    Перу
+                  </span>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter__button-block">
+            <button class="filter__button button-apply button-filter-text" type="button">
+              Применить
+            </button>
+            <button class="filter__button button-reset button-filter-text" type="button">
+              Сбросить
+            </button>
+          </div>
         </div>
-        <div class="filter__button-block">
-          <button class="filter__button button-apply button-filter-text" type="button">
-            Применить
-          </button>
-          <button class="filter__button button-reset button-filter-text" type="button">
-            Сбросить
-          </button>
+        <div class="catalog__select-block">
+          <label class="catalog__select-text label-text" for="filter-select">Сортировка:</label>
+          <select class="catalog__select label-text" name="#" id="filter-select">
+            <option value="default">по умолчанию</option>
+          </select>
         </div>
-      </div>
-      <div class="catalog__select-block">
-        <label class="catalog__select-text label-text" for="filter-select">Сортировка:</label>
-        <select class="catalog__select label-text" name="#" id="filter-select">
-          <option value="default">по умолчанию</option>
-        </select>
-      </div>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_white_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_white_tablet@1x.webp 1x, ./images/photo_milk_white_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_white_mobile@1x.webp 1x, ./images/photo_milk_white_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_white_tablet@1x.png, ./images/photo_milk_white_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_white_mobile@1x.png" srcset="./images/photo_milk_white_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_primary_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_primary_tablet@1x.webp 1x, ./images/photo_milk_primary_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_primary_mobile@1x.webp 1x, ./images/photo_milk_primary_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_primary_img_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_primary_tablet@1x.png, ./images/photo_milk_primary_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_primary_mobile@1x.png" srcset="./images/photo_milk_primary_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text ">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_black_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_black_tablet@1x.webp 1x, ./images/photo_milk_black_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_black_mobile@1x.webp 1x, ./images/photo_milk_black_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_black_img_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_black_tablet@1x.png, ./images/photo_milk_black_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_black_mobile@1x.png" srcset="./images/photo_milk_black_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_pink_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_pink_tablet@1x.webp 1x, ./images/photo_milk_pink_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_pink_mobile@1x.webp 1x, ./images/photo_milk_pink_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_pink_img_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_pink_tablet@1x.png, ./images/photo_milk_pink_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_pink_mobile@1x.png" srcset="./images/photo_milk_pink_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_brown_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_brown_tablet@1x.webp 1x, ./images/photo_milk_brown_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_brown_mobile@1x.webp 1x, ./images/photo_milk_brown_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_brown_img_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_brown_tablet@1x.png, ./images/photo_milk_brown_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_brown_mobile@1x.png" srcset="./images/photo_milk_brown_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture class="catalog__picture">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_beige_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_beige_tablet@1x.webp 1x, ./images/photo_milk_beige_tablet@2x.webp 2x" width="130" height="188">
-            <source type="image/webp" srcset="./images/photo_milk_beige_mobile@1x.webp 1x, ./images/photo_milk_beige_mobile@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_beige_img_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
-            <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_beige_tablet@1x.png, ./images/photo_milk_beige_tablet@2x.png 2x">
-            <img class="catalog__image" src="./images/photo_milk_beige_mobile@1x.png" srcset="./images/photo_milk_beige_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
-          </picture>
-          <div class="catalog__item-text-block">
-            <h4 class="catalog__item-subtitle heading3">
-              Декаф Флэт Уайт
-            </h4>
-            <span class="catalog__item-text small-text">
-              Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
-            </span>
-          </div>
-          <div class="catalog__item-price-block">
-            <span class="catalog__item-price-text price-text ">
-              225<span class="catalog__item-price-rouble rouble-text">a</span>
-            </span>
-            <button class="catalog__item-price-button small-text" type="button">
-              В корзину
-            </button>
-          </div>
-        </li>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_white_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_white_tablet@1x.webp 1x, ./images/photo_milk_white_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_white_mobile@1x.webp 1x, ./images/photo_milk_white_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_white_img_desktop@1x.webp 1x, ./images/photo_milk_white_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_white_tablet@1x.png, ./images/photo_milk_white_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_white_mobile@1x.png" srcset="./images/photo_milk_white_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_primary_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_primary_tablet@1x.webp 1x, ./images/photo_milk_primary_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_primary_mobile@1x.webp 1x, ./images/photo_milk_primary_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_primary_img_desktop@1x.webp 1x, ./images/photo_milk_primary_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_primary_tablet@1x.png, ./images/photo_milk_primary_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_primary_mobile@1x.png" srcset="./images/photo_milk_primary_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text ">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_black_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_black_tablet@1x.webp 1x, ./images/photo_milk_black_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_black_mobile@1x.webp 1x, ./images/photo_milk_black_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_black_img_desktop@1x.webp 1x, ./images/photo_milk_black_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_black_tablet@1x.png, ./images/photo_milk_black_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_black_mobile@1x.png" srcset="./images/photo_milk_black_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_pink_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_pink_tablet@1x.webp 1x, ./images/photo_milk_pink_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_pink_mobile@1x.webp 1x, ./images/photo_milk_pink_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_pink_img_desktop@1x.webp 1x, ./images/photo_milk_pink_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_pink_tablet@1x.png, ./images/photo_milk_pink_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_pink_mobile@1x.png" srcset="./images/photo_milk_pink_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_brown_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_brown_tablet@1x.webp 1x, ./images/photo_milk_brown_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_brown_mobile@1x.webp 1x, ./images/photo_milk_brown_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_brown_img_desktop@1x.webp 1x, ./images/photo_milk_brown_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_brown_tablet@1x.png, ./images/photo_milk_brown_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_brown_mobile@1x.png" srcset="./images/photo_milk_brown_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <picture class="catalog__picture">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/photo_milk_beige_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./images/photo_milk_beige_tablet@1x.webp 1x, ./images/photo_milk_beige_tablet@2x.webp 2x" width="130" height="188">
+              <source type="image/webp" srcset="./images/photo_milk_beige_mobile@1x.webp 1x, ./images/photo_milk_beige_mobile@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat_beige_img_desktop@1x.webp 1x, ./images/photo_milk_beige_desktop@2x.webp 2x" width="130" height="188">
+              <source media="(min-width: 768px)" width="130" height="188" type="image/png" srcset="./images/photo_milk_beige_tablet@1x.png, ./images/photo_milk_beige_tablet@2x.png 2x">
+              <img class="catalog__image" src="./images/photo_milk_beige_mobile@1x.png" srcset="./images/photo_milk_beige_mobile@2x.png 2x" width="130" height="188" alt="Логотип Drink2Go">
+            </picture>
+            <div class="catalog__item-text-block">
+              <h4 class="catalog__item-subtitle heading3">
+                Декаф Флэт Уайт
+              </h4>
+              <span class="catalog__item-text small-text">
+                Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком
+              </span>
+            </div>
+            <div class="catalog__item-price-block">
+              <span class="catalog__item-price-text price-text ">
+                225<span class="catalog__item-price-rouble rouble-text">a</span>
+              </span>
+              <button class="catalog__item-price-button small-text" type="button">
+                В корзину
+              </button>
+            </div>
+          </li>
 
-      </ul>
-      <div class="catalog__pagination-nav">
-        <ul class="catalog__pagination-list">
-          <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button pagination-back button-filter-text" type="button">
-              <span class="visually-hidden">
-                Кнопка пагинации "Назад"
-              </span>
-            </button>
-          </li>
-          <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button button-filter-text" type="button">1</button>
-          </li>
-          <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button catalog__pagination-button--active button-filter-text" type="button">2</button>
-          </li>
-          <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button button-filter-text" type="button">3</button>
-          </li>
-          <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button pagination-forward button-filter-text" type="button">
-              <span class="visually-hidden">
-                Кнопка пагинации "Вперед"
-              </span>
-            </button>
-          </li>
         </ul>
+        <div class="catalog__pagination-nav">
+          <ul class="catalog__pagination-list">
+            <li class="catalog__pagination-item">
+              <button class="catalog__pagination-button pagination-back button-filter-text" type="button">
+                <span class="visually-hidden">
+                  Кнопка пагинации "Назад"
+                </span>
+              </button>
+            </li>
+            <li class="catalog__pagination-item">
+              <button class="catalog__pagination-button button-filter-text" type="button">1</button>
+            </li>
+            <li class="catalog__pagination-item">
+              <button class="catalog__pagination-button catalog__pagination-button--active button-filter-text" type="button">2</button>
+            </li>
+            <li class="catalog__pagination-item">
+              <button class="catalog__pagination-button button-filter-text" type="button">3</button>
+            </li>
+            <li class="catalog__pagination-item">
+              <button class="catalog__pagination-button pagination-forward button-filter-text" type="button">
+                <span class="visually-hidden">
+                  Кнопка пагинации "Вперед"
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="main-container__map map" data-test="map">
