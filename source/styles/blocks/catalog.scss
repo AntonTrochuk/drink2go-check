@@ -363,6 +363,18 @@ input:checked + .filter__country-slider::before {
   color: $basic_white;
   margin: 0 0 20px;
 
+  &:hover {
+    background-color: $alt_primary_lighter;
+  }
+
+  &:active {
+    background-color: $alt_primary_darker;
+  }
+
+  &:disabled {
+    background-color: $basic_grey;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -375,6 +387,18 @@ input:checked + .filter__country-slider::before {
 .button-reset {
   background-color: $basic_white;
   color: $basic_primary;
+
+  &:hover {
+    background-color: $alt_primary_lighter;
+  }
+
+  &:active {
+    background-color: $alt_primary_darker;
+  }
+
+  &:disabled {
+    background-color: $alt_light_grey;
+  }
 
   @media (min-width: $desktop-width) {
     width: 149px;
@@ -536,6 +560,18 @@ input:checked + .filter__country-slider::before {
     background-size: 20px 16px;
   }
 
+  &:hover {
+    background-color: $alt_primary_lighter;
+  }
+
+  &:active {
+    background-color: $alt_primary_darker;
+  }
+
+  &:disabled {
+    background-color: $basic_grey;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -553,6 +589,7 @@ input:checked + .filter__country-slider::before {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin: 0 13px 0 0;
@@ -571,6 +608,26 @@ input:checked + .filter__country-slider::before {
   border-radius: 4px;
   color: $basic_primary;
   background-color: $basic_white;
+
+  &:hover {
+    background-color: $alt_primary_lighter;
+    color: $basic_white;
+  }
+
+  &:active {
+    background-color: $alt_primary_darker;
+    color: $basic_white;
+  }
+
+  &:focus-visible {
+    background-color: $alt_primary_darker;
+    color: $basic_white;
+  }
+
+  &:disabled {
+    background-color: $alt_light_grey;
+    color: $basic_white;
+  }
 }
 
 .catalog__pagination-button:not(.pagination-back):not(.pagination-forward) {
@@ -582,6 +639,26 @@ input:checked + .filter__country-slider::before {
   color: $basic_black;
   background-color: $background_lightest_grey;
   font-weight: bolder;
+
+  &:hover {
+    background-color: $background_lightest_grey;
+    color: $basic_black;
+  }
+
+  &:active {
+    background-color: $background_lightest_grey;
+    color: $basic_black;
+  }
+
+  &:focus-visible {
+    background-color: $background_lightest_grey;
+    color: $basic_black;
+  }
+
+  &:disabled {
+    background-color: $background_lightest_grey;
+    color: $basic_black;
+  }
 }
 
 .pagination-back {
@@ -599,6 +676,14 @@ input:checked + .filter__country-slider::before {
     }
   }
 
+  &:hover {
+    background-image: url("../../images/pagination-icon-back_hover.svg");
+  }
+
+  &:focus-visible {
+    background-image: url("../../images/pagination-icon-back_hover.svg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
     background-size: none;
@@ -614,6 +699,14 @@ input:checked + .filter__country-slider::before {
   background-position: 50%;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    background-image: url("../../images/pagination-icon-forward_hover.svg");
+  }
+
+  &:focus-visible {
+    background-image: url("../../images/pagination-icon-back_hover.svg");
+  }
 
   &::before {
     @media (min-width: $tablet-width) {

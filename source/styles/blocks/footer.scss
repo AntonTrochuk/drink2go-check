@@ -61,6 +61,7 @@
   display: flex;
   margin-left: auto;
   gap: 20px;
+  flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -77,6 +78,8 @@
 }
 
 .footer__navigation-store-block {
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 0;
@@ -142,8 +145,9 @@
   border-bottom: 1px solid $basic_secondary;
 
   @media (min-width: $tablet-width) {
+    width: 223px;
     border-bottom: none;
-    padding: 12px 25px 0 73px;
+    padding: 12px 0 0 73px;
   }
 
   @media (min-width: $desktop-width) {
