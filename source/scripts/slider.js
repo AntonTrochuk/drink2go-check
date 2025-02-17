@@ -60,5 +60,3 @@ const slider = () => {
 };
 
 export { slider };
-
-

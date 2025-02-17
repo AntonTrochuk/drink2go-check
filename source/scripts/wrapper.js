@@ -4,13 +4,13 @@ const DOMElementButtonClose = document.querySelector('.button-vissible');
 
 const wrapperMenu = () => {
   DOMElementButtonWrapper.addEventListener('click', () => {
-    DOMElementwrapperMenu.classList.remove('navigation__wrapper--open');
+    DOMElementwrapperMenu.classList.remove('navigation__list-wrapper--open');
     DOMElementButtonWrapper.classList.add('button-close');
     DOMElementButtonClose.classList.remove('button-close');
   });
 
   DOMElementButtonClose.addEventListener('click', () => {
-    DOMElementwrapperMenu.classList.add('navigation__wrapper--open');
+    DOMElementwrapperMenu.classList.add('navigation__list-wrapper--open');
     DOMElementButtonWrapper.classList.remove('button-close');
     DOMElementButtonClose.classList.add('button-close');
   });
