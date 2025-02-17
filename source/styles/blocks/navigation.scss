@@ -107,6 +107,46 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     align-items: center;
+
+    &:hover {
+      color: $basic_primary;
+    }
+
+    &:hover .button-user {
+      background-image: url("../../images/user_icon_activ.svg");
+    }
+
+    &:hover .button-union {
+      background-image: url("../../images/union_icon_activ.svg");
+    }
+
+    &:focus-visible {
+      color: $basic_primary;
+    }
+
+    &:focus-visible .button-user {
+      background-image: url("../../images/user_icon_activ.svg");
+    }
+
+    &:focus-visible .button-union {
+      background-image: url("../../images/union_icon_activ.svg");
+    }
+
+    &:active {
+      background-color: $basic_secondary;
+    }
+
+    &:active .navigation__button {
+      background-color: $basic_secondary;
+    }
+
+    &:active .button-user {
+      background-image: url("../../images/user_icon_activ.svg");
+    }
+
+    &:active .button-union {
+      background-image: url("../../images/union_icon_activ.svg");
+    }
   }
 }
 
@@ -114,6 +154,11 @@
   border: none;
   background-color: $basic_white;
   padding: 30px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $basic_secondary;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 40px 30px;
@@ -209,6 +254,9 @@
     border-bottom: 1px solid $basic_secondary;
   }
 
+  &:active {
+    background-color: $basic_secondary;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -232,21 +280,39 @@
   @media (min-width: $tablet-width) {
     padding: 32px 21px 30px;
     box-sizing: border-box;
+
+    &:active {
+      background-color: $basic_secondary;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 31px 21px;
     box-sizing: border-box;
+
+    &:hover {
+      color: $basic_primary;
+    }
+
+    &:focus-visible {
+      color: $basic_primary;
+    }
+
+    &:active {
+      background-color: $basic_secondary;
+    }
   }
 }
 
 .navigation__wrapper-link--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic_primary;
+    color: $basic_primary;
   }
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basic_primary;
+    color: $basic_primary;
   }
 }
