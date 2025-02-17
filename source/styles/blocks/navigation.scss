@@ -3,6 +3,7 @@
   background-color: $basic_white;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 728px;
