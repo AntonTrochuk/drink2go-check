@@ -171,14 +171,16 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
 
     &::before {
-      left: 30px;
-      top: 310px;
+      left: 40px;
+      top: 320px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    height: 100%;
     &::before {
       top: 347px;
     }
@@ -223,14 +225,16 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
 
     &::before {
-      left: 30px;
-      top: 310px;
+      left: 40px;
+      top: 320px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    height: 100%;
     &::before {
       top: 347px;
     }
