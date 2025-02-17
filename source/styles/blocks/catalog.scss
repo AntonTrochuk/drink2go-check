@@ -412,7 +412,6 @@ input[type="radio"]:disabled {
 
   &:hover {
     background-color: $alt_primary_opacity;
-    outline: 2px solid $alt_primary_lighter;
   }
 
   &::before {
