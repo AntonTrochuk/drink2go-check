@@ -85,6 +85,20 @@
 .footer__navigation-social-item {
   padding: 10px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: $basic_secondary;
+    border-radius: 4px;
+  }
+
+  &:hover svg {
+    fill: $basic_primary;
+  }
+
+  &:active {
+    background-color: $alt_primary_opacity;
+    border-radius: 4px;
+  }
 }
 
 .footer__navigation-store-block {
@@ -216,6 +230,42 @@
 
 .footer__developed-text {
   display: flex;
+
+  &:hover {
+    color: $basic_primary;
+  }
+
+  &:hover .footer__developed-link {
+    color: $basic_primary;
+  }
+
+  &:hover .footer__developed-link::after {
+    background-image: url("../../images/html_academy_logo_hover.svg");
+  }
+
+  &:focus {
+    color: $basic_primary;
+  }
+
+  &:focus .footer__developed-link {
+    color: $basic_primary;
+  }
+
+  &:focus .footer__developed-link::after {
+    background-image: url("../../images/html_academy_logo_hover.svg");
+  }
+
+  &:active {
+    color: $alt_primary_darker;
+  }
+
+  &:active .footer__developed-link {
+    color: $alt_primary_darker;
+  }
+
+  &:active .footer__developed-link::after {
+    background-image: url("../../images/html_academy_logo_active.svg");
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: center;

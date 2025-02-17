@@ -130,6 +130,37 @@
   border: 2px solid $basic_primary;
   background-color: $basic_white;
   top: -10px;
+
+  &:hover,
+  &:focus-visible {
+    &::before {
+      content: "";
+      background-color: $alt_primary_opacity;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:active {
+    &::before {
+      content: "";
+      background-color: $basic_primary;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .filter__range {
@@ -188,10 +219,16 @@
 .filter__price-range {
   width: 118px;
   height: 40px;
-  border: 2px solid $basic_primary;
+  border: 2px solid $alt_primary_lighter;
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
+
+  &:focus {
+    outline: none;
+    border-color: $basic_primary;
+    color: $basic_black;
+  }
 
   @media (min-width: $tablet-width) {
     width: 89px;
@@ -242,6 +279,39 @@
   gap: 10px;
 }
 
+.filter__availability-radio {
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    &::before {
+      content: "";
+      background-color: $alt_primary_opacity;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:active:not(:disabled) {
+    &::before {
+      content: "";
+      background-color: $basic_primary;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 input[type="radio"] {
   margin: 0;
   width: 24px;
@@ -250,6 +320,15 @@ input[type="radio"] {
   appearance: none;
   border-radius: 50%;
   position: relative;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $alt_primary_lighter;
+  }
+
+  &:active {
+    border-color: $basic_primary;
+  }
 }
 
 input[type="radio"]:checked {
@@ -328,8 +407,13 @@ input[type="radio"]:disabled {
   cursor: pointer;
   inset: 0;
   background-color: $basic_grey;
-  transition: 0.4s;
   border-radius: 34px;
+
+
+  &:hover {
+    background-color: $alt_primary_opacity;
+    outline: 2px solid $alt_primary_lighter;
+  }
 
   &::before {
     position: absolute;
@@ -395,14 +479,22 @@ input:checked + .filter__country-slider::before {
 
   &:hover {
     background-color: $alt_primary_lighter;
+    color: $basic_white;
+  }
+
+  &:focus-visible {
+    background-color: $alt_primary_lighter;
+    color: $basic_white;
   }
 
   &:active {
     background-color: $alt_primary_darker;
+    color: $basic_white;
   }
 
   &:disabled {
     background-color: $alt_light_grey;
+    color: $basic_white;
   }
 
   @media (min-width: $desktop-width) {
@@ -423,6 +515,11 @@ input:checked + .filter__country-slider::before {
   color: $basic_primary;
   padding-right: 8px;
   background-color: $background_lightest_grey;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $basic_secondary;
+  }
 }
 
 .catalog__select-block {
