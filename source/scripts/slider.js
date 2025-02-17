@@ -1,4 +1,4 @@
-const previewSection = document.querySelector('.preview');
+const previewSection = document.querySelector('.preview__container-section');
 const previewContainers = document.querySelectorAll('.preview__block');
 const sliderButtonPrev = document.querySelector('.preview__button-left');
 const sliderButtonNext = document.querySelector('.preview__button-right');

@@ -1,15 +1,28 @@
 .preview {
-  background-color: $background_flat_white;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($background_flat_white 76.5%, $basic_white 22.5%);
   }
 
   @media (min-width: $desktop-width) {
     background: none;
   }
 }
+
+.preview__container-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
 
 .preview__block {
   display: flex;
